@@ -440,6 +440,12 @@
     background-color: var(--off-white);
 }
 
+.handellipse {
+    position: absolute;
+    bottom: -21%;
+    right: -16%;
+}
+
 .op-60 {
     opacity: 60%;
 }
@@ -513,16 +519,20 @@
     background-color: var(--light-black);
     border: 3px solid var(--blue);
 }
-
+.-z-1{
+    z-index: -1;
+}
 .wave1 {
     position: absolute;
     top: -3%;
     left: 0;
 }
+
 .wave2 {
     position: absolute;
-    bottom: -3%;
+    top: -18%;
     left: 0;
+    z-index: 2 !important;
 }
 
 
@@ -610,9 +620,7 @@
         width: 503px;
     }
 
-    .bg-newsletter {
-        height: 700px;
-    }
+
 }
 
 @media (min-width:992px) {
@@ -624,8 +632,16 @@
         line-height: 83px;
     }
 
+    .bg-newsletter {
+        height: 700px;
+    }
+
     .scanner {
-        width: 593.27px;
+        width: 508.27px;
+    }
+
+    .min-vh-header {
+        min-height: 102vh;
     }
 }
 
