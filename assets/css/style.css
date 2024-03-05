@@ -339,6 +339,11 @@
     margin-left: auto !important;
 }
 
+.head2:not(.collapsed):after {
+    background-image: url(../images/minus.png) !important;
+    margin-left: auto !important;
+}
+
 .cursor-pointer {
     cursor: pointer;
 }
