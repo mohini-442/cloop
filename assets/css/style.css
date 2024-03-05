@@ -77,9 +77,11 @@
 .orange {
     color: var(--orange);
 }
-.bg-blue{
+
+.bg-blue {
     background-color: var(--blue);
 }
+
 .gray {
     color: var(--gray);
 }
@@ -313,6 +315,8 @@
     color: #fff !important;
     border: none !important;
     line-height: 24px !important;
+    display: flex;
+    gap: 40px !important;
 }
 
 .body2 {
@@ -322,6 +326,12 @@
     line-height: 24px !important;
     color: #fff !important;
     padding-top: 4px !important;
+    max-width: 402px !important;
+    margin-left: 6px !important;
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: none !important;
 }
 
 .head2::after {
@@ -333,7 +343,10 @@
     cursor: pointer;
 }
 
-
+.topp {
+    top: 12%;
+    z-index: -1;
+}
 
 
 
@@ -376,6 +389,9 @@
     opacity: 1 !important;
 }
 
+::placeholder {
+    color: #fff !important;
+}
 
 /* footer */
 
