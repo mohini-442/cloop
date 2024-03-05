@@ -165,7 +165,6 @@
 
 .w-img {
     max-width: 560px;
-    height: 570px;
 }
 
 .min-vh-header {
@@ -214,7 +213,6 @@
 
 .phnimg {
     width: 357.38px;
-    height: 465px;
 }
 
 .circle {
@@ -516,6 +514,16 @@
     border: 3px solid var(--blue);
 }
 
+.wave1 {
+    position: absolute;
+    top: -3%;
+    left: 0;
+}
+.wave2 {
+    position: absolute;
+    bottom: -3%;
+    left: 0;
+}
 
 
 @media (max-width: 992px) {
@@ -618,7 +626,6 @@
 
     .scanner {
         width: 593.27px;
-        height: 662.97px;
     }
 }
 
