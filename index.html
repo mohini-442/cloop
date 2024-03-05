@@ -42,18 +42,18 @@
 
 <body class="overflow-hidden">
     <!-- ====preloader====== -->
-    <div class="overflow-x-clip overflow_hidden">
+    <div class="overflow-x-clip overflow-hidden">
         <div id="preloader"
-            class=" bg-blue overflow_hidden w-100 min-vh-100 position-fixed d-flex justify-content-center flex-column align-items-center z_5 duration-100 cursor-pointer">
+            class=" bg-blue overflow-hidden w-100 min-vh-100 position-fixed d-flex justify-content-center flex-column align-items-center z_5 duration-100 cursor-pointer">
             <img src="./assets/images/logo.png" alt="ai" class="Preloder cursor-pointer animation mw-146 w-100">
         </div>
     </div>
-    <div class="position-relative">
+    <div class="position-relative" id="home">
         <header class="bg-header min-vh-header d-flex flex-column position-relative">
             <nav class="pt-4">
                 <div class="container mx-auto">
                     <div class="d-flex align-items-center  justify-content-between">
-                        <img src="./assets//images/logo.png" alt="logo" class="mw-146 cursor-pointer">
+                        <a href=""><img src="./assets//images/logo.png" alt="logo" class="mw-146"></a>
                         <ul class="d-flex align-items-center justify-content-center gap-5 mobile_view" id="navbar">
                             <li onclick="openNav()"><a href="#greener"
                                     class="ff-outfit mx-auto fs-s text-white op-90 fw-normal nav-line">How It Works</a>
@@ -95,7 +95,8 @@
                     </div>
                     <div
                         class="col-lg-6 col-12 pe-3 ps-3 d-flex align-items-center justify-content-center pt-5 pt-lg-0">
-                        <img src="./assets/images/detergent.png" alt="detergent" class="w-100 w-img ps-5 cursor-pointer">
+                        <img src="./assets/images/detergent.png" alt="detergent"
+                            class="w-100 w-img ps-5 cursor-pointer">
 
                     </div>
 
@@ -109,8 +110,8 @@
 
     <!-------------- greener-section-------------- -->
 
-    <section class="position-relative" id="greener">
-        <div class="container mx-auto ps-3 pe-3 py-3">
+    <section class="position-relative">
+        <div class="container mx-auto ps-3 pe-3 py-3" id="greener">
             <h2 class="ff-outfit fw-semibold fs-lg text-black max-w-675 mx-auto text-center">Creating a Greener World Is
                 Now As Easy As 1-2-3</h2>
             <div class="row py-5">
@@ -341,120 +342,114 @@
     </section>
 
     <!-- newsletter -->
-    <div>
-        <section class="bg-newsletter d-flex align-items-center justify-content-center">
-            <div class="container mx-auto pe-3 ps-3">
-                <h2 class="ff-outfit fw-semibold text-white fs-lg text-center">Subscribe Newsletter</h2>
-                <p class="ff-outfit text-white fs-s fw-normal text-center op-90 pt-2">Subscribe to our newsletter for
-                    the
-                    latest news, offers, and eco-tips.</p>
-                <div class="formbox d-flex justify-content-between mx-auto mt-4">
-                    <input type="e-mail" placeholder="Enter your email"
-                        class="ff-outfit fw-normal fs-s text-white formm">
-                    <button class="joinbtn ff-outfit fw-semibold fs-s ">Join</button>
-                </div>
+    <section class="bg-newsletter d-flex align-items-center justify-content-center">
+        <div class="container mx-auto pe-3 ps-3">
+            <h2 class="ff-outfit fw-semibold text-white fs-lg text-center">Subscribe Newsletter</h2>
+            <p class="ff-outfit text-white fs-s fw-normal text-center op-90 pt-2">Subscribe to our newsletter for
+                the
+                latest news, offers, and eco-tips.</p>
+            <div class="formbox d-flex justify-content-between mx-auto mt-4">
+                <input type="e-mail" placeholder="Enter your email" class="ff-outfit fw-normal fs-s text-white formm">
+                <button class="joinbtn ff-outfit fw-semibold fs-s ">Join</button>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!------------ footer ---------->
-        <section
-            class="bg-lightblack pt-5 d-flex align-items-center justify-content-center flex-column position-relative"
-            id="footer">
-            <div class="container mx-auto pe-3 ps-3 py-5">
-                <div class="row pb-5">
-                    <div class="col-lg-7 col-12">
-                        <img src="./assets/images/logo.png" alt="logo" class="mw-146 cursor-pointer">
-                        <p class="ff-outfit fs-s fw-normal lh-24 pt-2 text-white op-80 max-w-345">Cloopp revolutionizes
-                            recycling for
-                            everyone. Join, earn, and support sustainability.</p>
-                    </div>
-                    <div class="col-lg-5 pt-5 pt-lg-0">
-                        <div class="row">
-                            <div class="col-4">
-                                <ul class="ps-0">
-                                    <li><a href="#greener"
-                                            class="ff-outfit fw-normal fs-s text-white op-80 nav-line">About
-                                            Us</a></li>
-                                    <li class="pt-2"><a href="#recylcing"
-                                            class="ff-outfit fw-normal fs-s text-white op-80 pt-2 nav-line">How It
-                                            Works</a></li>
-                                    <li class="pt-2"><a href="#faq"
-                                            class="ff-outfit fw-normal fs-s text-white op-80 pt-2 nav-line">For
-                                            Brands</a></li>
-                                    <li class="pt-2"><a href="#footer"
-                                            class="ff-outfit fw-normal fs-s text-white op-80 pt-2 nav-line">FAQs</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-4">
-                                <ul class="ps-0">
-                                    <li><a href="" class="ff-outfit fw-normal fs-s text-white op-80 nav-line">Terms &
-                                            Conditions</a></li>
-                                    <li class="pt-2"><a href=""
-                                            class="ff-outfit fw-normal fs-s text-white op-80 pt-2 nav-line">Privacy
-                                            Policy</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-4">
-                                <ul class="ps-0">
-                                    <li><a href="" class="ff-outfit fw-normal fs-s text-white op-80">About Us</a></li>
+    <!------------ footer ---------->
+    <section class="bg-lightblack pt-5 d-flex align-items-center justify-content-center flex-column position-relative"
+        id="footer">
+        <div class="container mx-auto pe-3 ps-3 py-5">
+            <div class="row pb-5">
+                <div class="col-lg-7 col-12">
+                    <a href=""><img src="./assets/images/logo.png" alt="logo" class="mw-146"></a>
+                    <p class="ff-outfit fs-s fw-normal lh-24 pt-2 text-white op-80 max-w-345">Cloopp revolutionizes
+                        recycling for
+                        everyone. Join, earn, and support sustainability.</p>
+                </div>
+                <div class="col-lg-5 pt-5 pt-lg-0">
+                    <div class="row">
+                        <div class="col-4">
+                            <ul class="ps-0">
+                                <li><a href="#home" class="ff-outfit fw-normal fs-s text-white op-80 nav-line">About
+                                        Us</a></li>
+                                <li class="pt-2"><a href="#greener"
+                                        class="ff-outfit fw-normal fs-s text-white op-80 pt-2 nav-line">How It
+                                        Works</a></li>
+                                <li class="pt-2"><a href="#recylcing"
+                                        class="ff-outfit fw-normal fs-s text-white op-80 pt-2 nav-line">For
+                                        Brands</a></li>
+                                <li class="pt-2"><a href="#faq"
+                                        class="ff-outfit fw-normal fs-s text-white op-80 pt-2 nav-line">FAQs</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <ul class="ps-0">
+                                <li><a href="" class="ff-outfit fw-normal fs-s text-white op-80 nav-line">Terms &
+                                        Conditions</a></li>
+                                <li class="pt-2"><a href=""
+                                        class="ff-outfit fw-normal fs-s text-white op-80 pt-2 nav-line">Privacy
+                                        Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <ul class="ps-0">
+                                <li><a href="" class="ff-outfit fw-normal fs-s text-white op-80">About Us</a></li>
 
-                                </ul>
-                                <div class="d-flex gap-2 pt-3 align-items-center">
-                                    <a href="https://www.instagram.com/accounts/login/">
-                                        <div class="icons">
-                                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M9.37234 1.33401C9.85883 1.33214 10.3453 1.33703 10.8317 1.34868L10.961 1.35334C11.1103 1.35868 11.2577 1.36534 11.4357 1.37334C12.145 1.40668 12.629 1.51868 13.0537 1.68334C13.4937 1.85268 13.8643 2.08201 14.235 2.45268C14.5739 2.78575 14.8362 3.18864 15.0037 3.63334C15.1683 4.05801 15.2803 4.54268 15.3137 5.25201C15.3217 5.42934 15.3283 5.57734 15.3337 5.72668L15.3377 5.85601C15.3495 6.34214 15.3546 6.82841 15.353 7.31468L15.3537 7.81201V8.68534C15.3553 9.17184 15.3502 9.65833 15.3383 10.1447L15.3343 10.274C15.329 10.4233 15.3223 10.5707 15.3143 10.7487C15.281 11.458 15.1677 11.942 15.0037 12.3667C14.8368 12.8119 14.5744 13.2151 14.235 13.548C13.9017 13.8869 13.4985 14.1492 13.0537 14.3167C12.629 14.4813 12.145 14.5933 11.4357 14.6267C11.2577 14.6347 11.1103 14.6413 10.961 14.6467L10.8317 14.6507C10.3453 14.6625 9.85884 14.6676 9.37234 14.666L8.87501 14.6667H8.00234C7.51585 14.6683 7.02936 14.6632 6.54301 14.6513L6.41368 14.6473C6.25542 14.6416 6.09719 14.6349 5.93901 14.6273C5.22968 14.594 4.74568 14.4807 4.32034 14.3167C3.87547 14.1496 3.4725 13.8872 3.13968 13.548C2.80037 13.2149 2.53783 12.8117 2.37034 12.3667C2.20568 11.942 2.09368 11.458 2.06034 10.7487C2.05292 10.5905 2.04625 10.4323 2.04034 10.274L2.03701 10.1447C2.02472 9.65833 2.01916 9.17184 2.02034 8.68534V7.31468C2.01848 6.82841 2.02337 6.34214 2.03501 5.85601L2.03968 5.72668C2.04501 5.57734 2.05168 5.42934 2.05968 5.25201C2.09301 4.54201 2.20501 4.05868 2.36968 3.63334C2.53726 3.18842 2.80032 2.78564 3.14034 2.45334C3.47294 2.11385 3.87565 1.85106 4.32034 1.68334C4.74568 1.51868 5.22901 1.40668 5.93901 1.37334L6.41368 1.35334L6.54301 1.35001C7.02913 1.33773 7.5154 1.33217 8.00168 1.33334L9.37234 1.33401ZM8.68701 4.66734C8.24535 4.6611 7.80685 4.74269 7.39699 4.90739C6.98714 5.07209 6.61411 5.3166 6.29957 5.62671C5.98504 5.93683 5.73528 6.30637 5.5648 6.71385C5.39433 7.12134 5.30654 7.55864 5.30654 8.00034C5.30654 8.44205 5.39433 8.87935 5.5648 9.28684C5.73528 9.69432 5.98504 10.0639 6.29957 10.374C6.61411 10.6841 6.98714 10.9286 7.39699 11.0933C7.80685 11.258 8.24535 11.3396 8.68701 11.3333C9.57106 11.3333 10.4189 10.9822 11.044 10.357C11.6692 9.73191 12.0203 8.88407 12.0203 8.00001C12.0203 7.11596 11.6692 6.26811 11.044 5.64299C10.4189 5.01787 9.57106 4.66734 8.68701 4.66734ZM8.68701 6.00068C8.95268 5.99578 9.21666 6.04388 9.46354 6.14215C9.71042 6.24042 9.93523 6.38691 10.1249 6.57304C10.3145 6.75918 10.4651 6.98123 10.568 7.22624C10.6708 7.47124 10.7238 7.73429 10.7239 8C10.7239 8.26572 10.671 8.52878 10.5682 8.77382C10.4655 9.01886 10.3149 9.24097 10.1253 9.42717C9.93577 9.61337 9.711 9.75992 9.46416 9.85828C9.21732 9.95664 8.95335 10.0048 8.68768 10C8.15724 10 7.64854 9.7893 7.27346 9.41422C6.89839 9.03915 6.68768 8.53044 6.68768 8.00001C6.68768 7.46958 6.89839 6.96087 7.27346 6.5858C7.64854 6.21072 8.15724 6.00001 8.68768 6.00001L8.68701 6.00068ZM12.187 3.66734C11.9719 3.67595 11.7685 3.76744 11.6194 3.92266C11.4703 4.07787 11.387 4.28477 11.387 4.50001C11.387 4.71525 11.4703 4.92215 11.6194 5.07736C11.7685 5.23258 11.9719 5.32407 12.187 5.33268C12.408 5.33268 12.62 5.24488 12.7763 5.0886C12.9325 4.93232 13.0203 4.72036 13.0203 4.49934C13.0203 4.27833 12.9325 4.06637 12.7763 3.91009C12.62 3.75381 12.408 3.66601 12.187 3.66601V3.66734Z"
-                                                    fill="white" />
-                                            </svg>
-                                        </div>
-                                    </a>
-                                    <a href="https://www.facebook.com/">
-                                        <div class="icons">
-                                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M6.81852 14.3332H9.48519V8.99317H11.8879L12.1519 6.33984H9.48519V4.99984C9.48519 4.82303 9.55543 4.65346 9.68045 4.52843C9.80548 4.40341 9.97505 4.33317 10.1519 4.33317H12.1519V1.6665H10.1519C9.2678 1.6665 8.41996 2.01769 7.79484 2.64281C7.16971 3.26794 6.81852 4.11578 6.81852 4.99984V6.33984H5.48519L5.22119 8.99317H6.81852V14.3332Z"
-                                                    fill="white" />
-                                            </svg>
-                                        </div>
-                                    </a>
-                                    <a
-                                        href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D">
-                                        <div class="icons">
-                                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M2.68728 1.99775C2.69744 2.01299 3.81209 3.63799 5.16541 5.60576C6.51619 7.57354 7.62322 9.18838 7.62322 9.19346C7.62322 9.19854 3.05545 14.5179 2.70252 14.9216C2.66697 14.9647 2.6949 14.9673 3.24588 14.9673H3.82986L5.98806 12.4562L8.14881 9.94756L9.87283 12.4562L11.5969 14.9673H13.5088C15.0322 14.9673 15.4181 14.9597 15.4004 14.9343C15.3902 14.919 14.2426 13.2433 12.8486 11.2146C11.4521 9.18584 10.307 7.5126 10.2994 7.49482C10.2892 7.46436 10.9062 6.74072 14.1664 2.9499L15.0144 1.96729H14.4304H13.8465L11.8076 4.33877C10.6853 5.64131 9.76111 6.70518 9.75349 6.7001C9.74588 6.69756 9.00955 5.62861 8.1158 4.33115L6.49334 1.96729H4.58142C3.10623 1.96729 2.67459 1.9749 2.68728 1.99775ZM9.79412 8.35811C11.9168 11.3974 13.6967 13.944 13.75 14.0202L13.8465 14.1548H13.001L12.1554 14.1522L8.29607 8.62979C6.17341 5.59053 4.39353 3.04385 4.34021 2.96768L4.24119 2.83057H5.08924L5.93474 2.83311L9.79412 8.35811Z"
-                                                    fill="white" />
-                                            </svg>
-                                        </div>
-                                    </a>
-                                    <a href="https://telegram.org/">
-                                        <div class="icons">
-                                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M15.6465 3.08151L13.534 13.044C13.3745 13.747 12.959 13.922 12.3685 13.591L9.14952 11.219L7.59652 12.713C7.42452 12.885 7.28102 13.0285 6.94952 13.0285L7.18102 9.75051L13.1465 4.36001C13.406 4.12901 13.09 4.00051 12.7435 4.23201L5.36852 8.87601L2.19352 7.88201C1.50302 7.66651 1.49052 7.19151 2.33752 6.86001L14.756 2.07551C15.331 1.86001 15.834 2.20301 15.6465 3.08151Z"
-                                                    fill="white" />
-                                            </svg>
-                                        </div>
-                                    </a>
-                                </div>
+                            </ul>
+                            <div class="d-flex gap-2 pt-3 align-items-center">
+                                <a href="https://www.instagram.com/accounts/login/">
+                                    <div class="icons">
+                                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.37234 1.33401C9.85883 1.33214 10.3453 1.33703 10.8317 1.34868L10.961 1.35334C11.1103 1.35868 11.2577 1.36534 11.4357 1.37334C12.145 1.40668 12.629 1.51868 13.0537 1.68334C13.4937 1.85268 13.8643 2.08201 14.235 2.45268C14.5739 2.78575 14.8362 3.18864 15.0037 3.63334C15.1683 4.05801 15.2803 4.54268 15.3137 5.25201C15.3217 5.42934 15.3283 5.57734 15.3337 5.72668L15.3377 5.85601C15.3495 6.34214 15.3546 6.82841 15.353 7.31468L15.3537 7.81201V8.68534C15.3553 9.17184 15.3502 9.65833 15.3383 10.1447L15.3343 10.274C15.329 10.4233 15.3223 10.5707 15.3143 10.7487C15.281 11.458 15.1677 11.942 15.0037 12.3667C14.8368 12.8119 14.5744 13.2151 14.235 13.548C13.9017 13.8869 13.4985 14.1492 13.0537 14.3167C12.629 14.4813 12.145 14.5933 11.4357 14.6267C11.2577 14.6347 11.1103 14.6413 10.961 14.6467L10.8317 14.6507C10.3453 14.6625 9.85884 14.6676 9.37234 14.666L8.87501 14.6667H8.00234C7.51585 14.6683 7.02936 14.6632 6.54301 14.6513L6.41368 14.6473C6.25542 14.6416 6.09719 14.6349 5.93901 14.6273C5.22968 14.594 4.74568 14.4807 4.32034 14.3167C3.87547 14.1496 3.4725 13.8872 3.13968 13.548C2.80037 13.2149 2.53783 12.8117 2.37034 12.3667C2.20568 11.942 2.09368 11.458 2.06034 10.7487C2.05292 10.5905 2.04625 10.4323 2.04034 10.274L2.03701 10.1447C2.02472 9.65833 2.01916 9.17184 2.02034 8.68534V7.31468C2.01848 6.82841 2.02337 6.34214 2.03501 5.85601L2.03968 5.72668C2.04501 5.57734 2.05168 5.42934 2.05968 5.25201C2.09301 4.54201 2.20501 4.05868 2.36968 3.63334C2.53726 3.18842 2.80032 2.78564 3.14034 2.45334C3.47294 2.11385 3.87565 1.85106 4.32034 1.68334C4.74568 1.51868 5.22901 1.40668 5.93901 1.37334L6.41368 1.35334L6.54301 1.35001C7.02913 1.33773 7.5154 1.33217 8.00168 1.33334L9.37234 1.33401ZM8.68701 4.66734C8.24535 4.6611 7.80685 4.74269 7.39699 4.90739C6.98714 5.07209 6.61411 5.3166 6.29957 5.62671C5.98504 5.93683 5.73528 6.30637 5.5648 6.71385C5.39433 7.12134 5.30654 7.55864 5.30654 8.00034C5.30654 8.44205 5.39433 8.87935 5.5648 9.28684C5.73528 9.69432 5.98504 10.0639 6.29957 10.374C6.61411 10.6841 6.98714 10.9286 7.39699 11.0933C7.80685 11.258 8.24535 11.3396 8.68701 11.3333C9.57106 11.3333 10.4189 10.9822 11.044 10.357C11.6692 9.73191 12.0203 8.88407 12.0203 8.00001C12.0203 7.11596 11.6692 6.26811 11.044 5.64299C10.4189 5.01787 9.57106 4.66734 8.68701 4.66734ZM8.68701 6.00068C8.95268 5.99578 9.21666 6.04388 9.46354 6.14215C9.71042 6.24042 9.93523 6.38691 10.1249 6.57304C10.3145 6.75918 10.4651 6.98123 10.568 7.22624C10.6708 7.47124 10.7238 7.73429 10.7239 8C10.7239 8.26572 10.671 8.52878 10.5682 8.77382C10.4655 9.01886 10.3149 9.24097 10.1253 9.42717C9.93577 9.61337 9.711 9.75992 9.46416 9.85828C9.21732 9.95664 8.95335 10.0048 8.68768 10C8.15724 10 7.64854 9.7893 7.27346 9.41422C6.89839 9.03915 6.68768 8.53044 6.68768 8.00001C6.68768 7.46958 6.89839 6.96087 7.27346 6.5858C7.64854 6.21072 8.15724 6.00001 8.68768 6.00001L8.68701 6.00068ZM12.187 3.66734C11.9719 3.67595 11.7685 3.76744 11.6194 3.92266C11.4703 4.07787 11.387 4.28477 11.387 4.50001C11.387 4.71525 11.4703 4.92215 11.6194 5.07736C11.7685 5.23258 11.9719 5.32407 12.187 5.33268C12.408 5.33268 12.62 5.24488 12.7763 5.0886C12.9325 4.93232 13.0203 4.72036 13.0203 4.49934C13.0203 4.27833 12.9325 4.06637 12.7763 3.91009C12.62 3.75381 12.408 3.66601 12.187 3.66601V3.66734Z"
+                                                fill="white" />
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a href="https://www.facebook.com/">
+                                    <div class="icons">
+                                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.81852 14.3332H9.48519V8.99317H11.8879L12.1519 6.33984H9.48519V4.99984C9.48519 4.82303 9.55543 4.65346 9.68045 4.52843C9.80548 4.40341 9.97505 4.33317 10.1519 4.33317H12.1519V1.6665H10.1519C9.2678 1.6665 8.41996 2.01769 7.79484 2.64281C7.16971 3.26794 6.81852 4.11578 6.81852 4.99984V6.33984H5.48519L5.22119 8.99317H6.81852V14.3332Z"
+                                                fill="white" />
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a
+                                    href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D">
+                                    <div class="icons">
+                                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M2.68728 1.99775C2.69744 2.01299 3.81209 3.63799 5.16541 5.60576C6.51619 7.57354 7.62322 9.18838 7.62322 9.19346C7.62322 9.19854 3.05545 14.5179 2.70252 14.9216C2.66697 14.9647 2.6949 14.9673 3.24588 14.9673H3.82986L5.98806 12.4562L8.14881 9.94756L9.87283 12.4562L11.5969 14.9673H13.5088C15.0322 14.9673 15.4181 14.9597 15.4004 14.9343C15.3902 14.919 14.2426 13.2433 12.8486 11.2146C11.4521 9.18584 10.307 7.5126 10.2994 7.49482C10.2892 7.46436 10.9062 6.74072 14.1664 2.9499L15.0144 1.96729H14.4304H13.8465L11.8076 4.33877C10.6853 5.64131 9.76111 6.70518 9.75349 6.7001C9.74588 6.69756 9.00955 5.62861 8.1158 4.33115L6.49334 1.96729H4.58142C3.10623 1.96729 2.67459 1.9749 2.68728 1.99775ZM9.79412 8.35811C11.9168 11.3974 13.6967 13.944 13.75 14.0202L13.8465 14.1548H13.001L12.1554 14.1522L8.29607 8.62979C6.17341 5.59053 4.39353 3.04385 4.34021 2.96768L4.24119 2.83057H5.08924L5.93474 2.83311L9.79412 8.35811Z"
+                                                fill="white" />
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a href="https://telegram.org/">
+                                    <div class="icons">
+                                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15.6465 3.08151L13.534 13.044C13.3745 13.747 12.959 13.922 12.3685 13.591L9.14952 11.219L7.59652 12.713C7.42452 12.885 7.28102 13.0285 6.94952 13.0285L7.18102 9.75051L13.1465 4.36001C13.406 4.12901 13.09 4.00051 12.7435 4.23201L5.36852 8.87601L2.19352 7.88201C1.50302 7.66651 1.49052 7.19151 2.33752 6.86001L14.756 2.07551C15.331 1.86001 15.834 2.20301 15.6465 3.08151Z"
+                                                fill="white" />
+                                        </svg>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="footerline"></div>
-            <p class="ff-outfit fw-normal text-white op-60 text-center py-2">© 2024 Cloopp</p>
-            <img src="./assets/images/footervector.png" alt="" class="position-absolute top-t left-0 w-100">
-        </section>
-
-    </div>
+        </div>
+        <div class="footerline"></div>
+        <p class="ff-outfit fw-normal text-white op-60 text-center py-2">© 2024 Cloopp</p>
+        <img src="./assets/images/footervector.png" alt="" class="position-absolute top-t left-0 w-100">
+    </section>
 
     <!-- === back-to-top ===== -->
     <div onclick="window.scrollTo(0,0)" id="backtotop"

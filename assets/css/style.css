@@ -292,11 +292,6 @@
     border: none !important;
 }
 
-.accordion-button::after {
-    background-image: url(../images/a.png) !important
-}
-
-
 .acc2 {
     max-width: 513px !important;
 }
@@ -371,11 +366,17 @@
 
 .joinbtn {
     color: var(--blue);
-    width: 95px;
-    height: 54px;
-    padding: 18px, 32px, 18px, 32px;
+    padding: 18px 32px !important;
     border-radius: 10px;
     border: none !important;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.joinbtn:hover {
+    transform: scale(0.8);
 }
 
 .formbox {
@@ -489,9 +490,6 @@
     height: 100px;
 }
 
-.overflow_hidden {
-    overflow: hidden !important;
-}
 
 /* backtotop */
 .pos-fixed {
