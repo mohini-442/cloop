@@ -244,11 +244,11 @@
 }
 
 /* accordian */
-.accordion {
+#faq .accordion {
     max-width: 957px !important;
 }
 
-.accordion-item {
+#faq .accordion-item {
     border-radius: 10px !important;
     border: 1px solid #c5c5c5 !important;
     box-shadow: none !important;
@@ -256,7 +256,7 @@
     margin-top: 16px !important;
 }
 
-.accordion-button {
+#faq .accordion-button {
     font-family: var(--ff-Outfit) !important;
     font-size: var(--fs-sm) !important;
     font-weight: 500 !important;
@@ -264,7 +264,7 @@
     background-color: transparent !important;
 }
 
-.accordion-body {
+#faq .accordion-body {
     font-family: var(--dark-green) !important;
     font-size: var(--fs-s) !important;
     font-weight: 400 !important;
@@ -281,46 +281,54 @@
     border: none !important;
 }
 
-.item2 {
-    border-radius: 10px;
-    border: 1px solid #A4A4A4;
-    padding: 16px 18px 16px 20px !important;
-    background-color: transparent !important
-}
-
-.head2 {
-    font-family: var(--ff-Outfit) !important;
-    font-size: var(--fs-sm) !important;
-    font-weight: 500 !important;
-    color: #fff !important;
-    border: none !important;
-    line-height: 24px !important;
-    gap: 40px !important;
-}
-
-.body2 {
-    font-family: var(--ff-Outfit) !important;
-    font-size: var(--fs-s) !important;
-    font-weight: 400 !important;
-    line-height: 24px !important;
-    color: #fff !important;
-    padding-top: 4px !important;
-    max-width: 402px !important;
-    margin-left: 6px !important;
-}
-
 .accordion-button:not(.collapsed) {
     box-shadow: none !important;
 }
 
-.head2::after {
-    background-image: url(../images/plus.png) !important;
-    margin-left: auto !important;
+#recycling .accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: transparent !important;
+    overflow-anchor: none;
+    transition: var(--bs-accordion-transition);
+    border-radius: 10px !important;
+    color: #fff !important;
 }
 
-.head2:not(.collapsed)::after {
-    background-image: url(../images/minus.png) !important;
-    margin-left: auto !important;
+#recycling .accordion-body {
+    padding-top: 0px !important;
+    padding-left: 60px !important;
+    max-width: 452px !important;
+}
+
+#recycling .accordion-button:not(.collapsed) {
+    box-shadow: none !important;
+    padding-bottom: 12px !important;
+}
+
+#recycling .accordion-button:not(.collapsed):after {
+    background-image: url("../images/minus.png") !important;
+}
+
+#recycling .accordion-button:after {
+    background-image: url("../images/plus.png") !important;
+}
+
+#recycling .accordion-button:focus {
+    box-shadow: none !important;
+}
+
+#recycling .accordion-item {
+    border: 1px solid #A4A4A4 !important;
+    margin-bottom: 16px !important;
+    background-color: transparent !important;
+    border-radius: 10px !important;
+}
+
+.gap_19 {
+    gap: 19px;
 }
 
 .cursor-pointer {
@@ -597,7 +605,7 @@
         line-height: 83px;
     }
 
-    .acc2 {
+    .mw-513 {
         max-width: 513px !important;
     }
 
