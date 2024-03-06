@@ -166,9 +166,6 @@
     max-width: 560px;
 }
 
-.bottom-p {
-    bottom: -10px;
-}
 
 .arrow {
     position: absolute;
@@ -512,8 +509,15 @@
 
 .wave1 {
     position: absolute;
-    top: -3%;
+    bottom: -6%;
     left: 0;
+}
+
+.headerwave {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    width: 100%;
 }
 
 .wave2 {
@@ -571,6 +575,7 @@
     }
 }
 
+
 @media (min-width:768px) {
     .top-t {
         top: -13%;
@@ -583,7 +588,7 @@
         --fs-md: 32px;
         --fs-lg: 39px;
         --fs-xl: 64px;
-        --fs-xxl: 80px;
+        --fs-xxl: 60px;
     }
 
     .wave2 {
@@ -604,6 +609,10 @@
         background-size: 100% 100%;
     }
 
+    .wave1 {
+        bottom: -13%;
+    }
+
     .lh-83 {
         line-height: 83px;
     }
@@ -621,7 +630,7 @@
     }
 
     .min-vh-header {
-        min-height: 102vh;
+        min-height: calc(100vh-90px) !important;
     }
 }
 
@@ -630,6 +639,10 @@
         /* font-size  */
         --fs-lg: 47px;
         --fs-xxl: 72px;
+    }
+
+    .wave1 {
+        bottom: -17%;
     }
 }
 
