@@ -133,7 +133,6 @@
     line-height: 100px;
 }
 
-
 * {
     padding: 0 !important;
     margin: 0 !important;
@@ -147,7 +146,7 @@
     background-image: url(../images/headerbg.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     object-fit: cover;
 }
 
@@ -167,12 +166,8 @@
     max-width: 560px;
 }
 
-.min-vh-header {
-    min-height: 102vh;
-}
-
 .bottom-p {
-    bottom: 0%;
+    bottom: -10px;
 }
 
 .arrow {
@@ -204,7 +199,6 @@
     width: 100%;
 }
 
-
 /* section-2 */
 
 .max-w-675 {
@@ -221,6 +215,15 @@
     padding: 5px, 0px, 5px, 0px;
     border-radius: 45px;
     background: var(--dark-green);
+    transition: .5s;
+}
+
+.circle:hover {
+    background-color: #F8B762;
+}
+
+.circle:hover p {
+    color: #15231F;
 }
 
 .op-80 {
@@ -236,15 +239,6 @@
 }
 
 /* recycling-section */
-.bg-sky {
-    background-image: url(../images/bg-sky.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    object-fit: cover;
-    height: 1500px;
-}
-
 .scanner {
     width: 60%;
 }
@@ -266,9 +260,6 @@
     font-family: var(--ff-Outfit) !important;
     font-size: var(--fs-sm) !important;
     font-weight: 500 !important;
-    line-height: 31px;
-    letter-spacing: 0em;
-    text-align: left;
     color: var(--light-black) !important;
     background-color: transparent !important;
 }
@@ -290,10 +281,6 @@
     border: none !important;
 }
 
-.acc2 {
-    max-width: 513px !important;
-}
-
 .item2 {
     border-radius: 10px;
     border: 1px solid #A4A4A4;
@@ -308,7 +295,6 @@
     color: #fff !important;
     border: none !important;
     line-height: 24px !important;
-    display: flex;
     gap: 40px !important;
 }
 
@@ -332,7 +318,7 @@
     margin-left: auto !important;
 }
 
-.head2:not(.collapsed):after {
+.head2:not(.collapsed)::after {
     background-image: url(../images/minus.png) !important;
     margin-left: auto !important;
 }
@@ -345,12 +331,6 @@
     top: 12%;
     z-index: -1;
 }
-
-
-
-
-
-
 
 /* newsletter */
 .bg-newsletter {
@@ -395,6 +375,11 @@
 
 ::placeholder {
     color: #fff !important;
+    opacity: 80%;
+}
+
+.nav-bg {
+    background: #FFFFFF05;
 }
 
 /* footer */
@@ -454,11 +439,7 @@
     top: -7%;
 }
 
-
-
-
 /* preloader */
-
 .duration-100 {
     transition: 100ms linear;
 }
@@ -489,12 +470,6 @@
     }
 }
 
-.Preloder {
-    width: 100px;
-    height: 100px;
-}
-
-
 /* backtotop */
 .pos-fixed {
     position: fixed !important;
@@ -519,9 +494,11 @@
     background-color: var(--light-black);
     border: 3px solid var(--blue);
 }
-.-z-1{
+
+.-z-1 {
     z-index: -1;
 }
+
 .wave1 {
     position: absolute;
     top: -3%;
@@ -530,7 +507,7 @@
 
 .wave2 {
     position: absolute;
-    top: -18%;
+    top: -11%;
     left: 0;
     z-index: 2 !important;
 }
@@ -578,26 +555,8 @@
         background-color: var(--off-white);
     }
 
-    .menubar-line .line-1 {
-        max-width: 303px;
-        width: 100%;
-        margin-bottom: 20px;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .line-1::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 1px;
-        background-color: var(--black);
-        left: 0;
-        bottom: -30px;
-        opacity: 0.2;
+    .lh-71 {
+        line-height: 71px;
     }
 }
 
@@ -616,11 +575,13 @@
         --fs-xxl: 80px;
     }
 
+    .wave2 {
+        top: -18%;
+    }
+
     .formbox {
         width: 503px;
     }
-
-
 }
 
 @media (min-width:992px) {
@@ -628,8 +589,16 @@
         top: -26%;
     }
 
+    .bg-header {
+        background-size: 100% 100%;
+    }
+
     .lh-83 {
         line-height: 83px;
+    }
+
+    .acc2 {
+        max-width: 513px !important;
     }
 
     .bg-newsletter {
@@ -646,12 +615,21 @@
 }
 
 @media (min-width:1200px) {
-    .bg-sky {
-        height: 980px;
+    :root {
+        /* font-size  */
+        --fs-lg: 47px;
+        --fs-xxl: 72px;
     }
+}
 
+@media (min-width:1400px) {
     :root {
         /* font-size  */
         --fs-lg: 52px;
+        --fs-xxl: 80px;
+    }
+
+    .wave2 {
+        top: -27%;
     }
 }
