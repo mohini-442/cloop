@@ -295,6 +295,8 @@
     transition: var(--bs-accordion-transition);
     border-radius: 10px !important;
     color: #fff !important;
+    font-size: var(--fs-sm) !important;
+    font-weight: 500 !important;
 }
 
 #recycling .accordion-body {
@@ -325,6 +327,7 @@
     margin-bottom: 16px !important;
     background-color: transparent !important;
     border-radius: 10px !important;
+    padding: 16px 20px !important;
 }
 
 .gap_19 {
