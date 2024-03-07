@@ -82,22 +82,6 @@
     background-color: var(--blue);
 }
 
-.gray {
-    color: var(--gray);
-}
-
-.light-gray {
-    color: var(--light-gray);
-}
-
-.mid-gray {
-    color: var(--mid-gray);
-}
-
-.dark-gray {
-    color: var(--dark-gray)
-}
-
 .bg-lightblack {
     background-color: var(--light-black);
 }
@@ -105,32 +89,8 @@
 
 /* line-height  */
 
-.lh-17 {
-    line-height: 17px;
-}
-
 .lh-24 {
     line-height: 24px;
-}
-
-.lh-30 {
-    line-height: 30px;
-}
-
-.lh-31 {
-    line-height: 31px;
-}
-
-.lh-35 {
-    line-height: 35px;
-}
-
-.lh-62 {
-    line-height: 62px;
-}
-
-.lh-100 {
-    line-height: 100px;
 }
 
 * {
@@ -165,7 +125,6 @@
 .w-img {
     max-width: 560px;
 }
-
 
 .arrow {
     position: absolute;
@@ -266,8 +225,6 @@
     font-size: var(--fs-s) !important;
     font-weight: 400 !important;
     line-height: 24px !important;
-    letter-spacing: 0em;
-    text-align: left;
     opacity: 80% !important;
     max-width: 758px !important;
     padding-top: 4px !important;
@@ -283,13 +240,7 @@
 }
 
 #recycling .accordion-button {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 100%;
     background: transparent !important;
-    overflow-anchor: none;
-    transition: var(--bs-accordion-transition);
     border-radius: 10px !important;
     color: #fff !important;
     font-size: var(--fs-sm) !important;
