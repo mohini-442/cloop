@@ -23,3 +23,11 @@ setTimeout(() => {
     document.body.classList.remove("overflow-hidden")
 }
     , 3000);
+
+
+
+
+if (true) {
+    let name = "mohini"
+}
+console.log(name)
